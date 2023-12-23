@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" >
+
+</head>
+<body>
+    <div class="container">
+       <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a routerLink="/profile" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                 <!-- Other navigation links -->
+                <li><a routerLink="/profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Profile</span>
+                </a></li>
+                <li><a routerLink="/schedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Exam Schedule</span>
+                </a></li>
+                <li><a routerLink="/assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Assesment</span>
+                </a></li>
+                <li><a routerLink="/results" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Exam Results</span>
+                </a></li>
+                <li><a routerLink="/logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="box">
+      <h3>Assignment Completion Status</h3><br>
+
+      <div>
+        <label for="semester">Select Semester:</label>
+        <!-- Display select dropdown for choosing a semester -->
+        <select id="semester" [(ngModel)]="selectedSemester" (ngModelChange)="filterAssesmentStatus()">
+          <!-- Iterate over semesters and display options -->
+          <option *ngFor="let semester of semesters" [value]="semester">{{ semester }}</option>
+        </select>
+      </div>
+
+      <table>
+        <tr *ngIf="filteredAssesmentStatus.length > 0" class="table table-striped">
+          <th>Semester</th>
+          <th>Subject Code</th>
+          <th>Subject Name</th>
+          <th>Assigned</th>
+          <th>Completed</th>
+        </tr>
+        <!-- Iterate over filteredAssesmentStatus and display assignment details -->
+        <tr *ngFor="let item of filteredAssesmentStatus">
+          <td>{{ item.semester }}</td>
+          <td>{{ item.subjectcode }}</td>
+          <td>{{ item.subjectname }}</td>
+          <td>{{ item.assigned }}</td>
+          <td>{{ item.completed }}</td>
+        </tr>
+      </table>
+
+      <!-- Display a message when no details are available for the selected semester -->
+      <p *ngIf="filteredAssesmentStatus.length === 0">No Details available for the selected semester.</p>
+    </div>
+
+</body>
+</html>

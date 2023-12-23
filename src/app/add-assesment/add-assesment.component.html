@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Assesment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" >
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin-dashboard" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <li><a routerLink="/add-profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Add Profile</span>
+                </a></li>
+                <li><a routerLink="/add-examschedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Add Exam Schedule</span>
+                </a></li>
+                <li><a routerLink="/add-assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Add Assesment</span>
+                </a></li>
+                <li><a routerLink="/add-examresults" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Add Exam Results</span>
+                </a></li>
+                <li><a routerLink="/admin-logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+          <h3>Assessments</h3>
+          <div>
+            <label for="semesterSelect">Select Semester:</label>
+            <select id="semesterSelect" [(ngModel)]="selectedSemester" (change)="onSemesterChange()">
+              <option *ngFor="let semester of semesters" [value]="semester">{{ semester }}</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="registerNumberSelect">Select Register Number:</label>
+            <select id="registerNumberSelect" [(ngModel)]="selectedRegisterNumber" (change)="onRegisterNumberChange()">
+              <option *ngFor="let number of registerNumbers" [value]="number">{{ number }}</option>
+            </select>
+          </div>
+
+          <br>
+          <ng-container *ngIf="filteredAssessments.length > 0; else noData">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Register Number</th>
+                <th>Branch</th>
+                <th>Semester</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Assigned</th>
+                <th>Completed</th>
+                <th>Actions</th>
+              </tr>
+              <tr *ngFor="let assessment of filteredAssessments">
+                <td>{{ assessment.id }}</td>
+                <td>{{ assessment.registernumber }}</td>
+                <td>{{ assessment.branch }}</td>
+                <td>{{ assessment.semester }}</td>
+                <td>{{ assessment.subjectcode }}</td>
+                <td>{{ assessment.subjectname }}</td>
+                <td>{{ assessment.assigned }}</td>
+                <td>{{ assessment.completed }}</td>
+                <td>
+                  <button (click)="editAssessment(assessment)" class="btn3">Edit</button>
+                  <button (click)="deleteAssessment(assessment.id)" class="btn4">Delete</button>
+                </td>
+              </tr>
+            </table>
+          </ng-container>
+          <ng-template #noData>
+            <p>No assessments available for Semester {{ selectedSemester }}</p>
+          </ng-template>
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="btn1" (click)="showAddAssessmentForm = true">Add Assessment</button>
+          <button type="button" class="btn2" (click)="showRemoveAssessmentForm = true">Remove Assessment</button>
+        </div>
+
+        <div *ngIf="showAddAssessmentForm" class="form-container">
+          <h2>Add Assessment</h2>
+          <div class="control">
+            <label for="registerNumber">Register Number:</label>
+            <input type="number" id="registerNumber" [(ngModel)]="newAssessment.registernumber" required>
+          </div>
+          <div class="control">
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" [(ngModel)]="newAssessment.branch" required>
+          </div>
+          <div class="control">
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" [(ngModel)]="newAssessment.semester" required>
+          </div>
+          <div class="control">
+            <label for="subjectCode">Subject Code:</label>
+            <input type="text" id="subjectCode" [(ngModel)]="newAssessment.subjectcode" required>
+          </div>
+          <div class="control">
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" [(ngModel)]="newAssessment.subjectname" required>
+          </div>
+          <div class="control">
+            <label for="assigned">Assigned:</label>
+            <input type="text" id="assigned" [(ngModel)]="newAssessment.assigned" required>
+          </div>
+          <div class="control">
+            <label for="completed">Completed:</label>
+            <input type="text" id="completed" [(ngModel)]="newAssessment.completed" required>
+          </div>
+          <button (click)="addAssessment()" class="btn5">Add</button>
+          <button (click)="cancelAddAssessment()" class="btn6">Cancel</button>
+        </div>
+
+        <div *ngIf="showEditAssessmentForm" class="form-container">
+          <h2>Edit Assessment</h2>
+          <div class="control">
+            <label for="registerNumber">Register Number:</label>
+            <input type="number" id="registerNumber" [(ngModel)]="editingAssessment.registernumber" required>
+          </div>
+          <div class="control">
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" [(ngModel)]="editingAssessment.branch" required>
+          </div>
+          <div class="control">
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" [(ngModel)]="editingAssessment.semester" required>
+          </div>
+          <div class="control">
+            <label for="subjectCode">Subject Code:</label>
+            <input type="text" id="subjectCode" [(ngModel)]="editingAssessment.subjectcode" required>
+          </div>
+          <div class="control">
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" [(ngModel)]="editingAssessment.subjectname" required>
+          </div>
+          <div class="control">
+            <label for="assigned">Assigned:</label>
+            <input type="text" id="assigned" [(ngModel)]="editingAssessment.assigned" required>
+          </div>
+          <div class="control">
+            <label for="completed">Completed:</label>
+            <input type="text" id="completed" [(ngModel)]="editingAssessment.completed" required>
+          </div>
+          <button (click)="updateAssessment()" class="btn5">Update</button>
+          <button (click)="cancelEditAssessment()" class="btn6">Cancel</button>
+        </div>
+
+        <div *ngIf="showRemoveAssessmentForm" class="form-container">
+          <div class="control">
+            <label for="assessmentIdToRemove">Assessment ID to Remove:</label>
+            <input type="number" id="assessmentIdToRemove" [(ngModel)]="assessmentIdToRemove">
+          </div>
+          <button (click)="removeAssessment()" class="btn5">Remove</button>
+          <button (click)="cancelRemoveAssessment()" class="btn6">Cancel</button>
+        </div>
+
+      </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border:none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+body{
+  background-image: url(images/bg9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+}
+
+
+.container{
+  display: flex;
+}
+
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 69px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  transition: 0.2s linear;
+}
+
+nav:hover{
+  width: 290px;
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  color: rgb(85,83,83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+
+nav .fas{
+  position: relative;
+  width: 76px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover{
+  background: #eee;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logout img{
+  width: 20px;
+  height: 20px;
+}
+
+.logout span{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.png{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.material-symbols-sharp {
+font-size: 32px;
+}
+
+.png span{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.btn1{
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.btn1:focus{
+  outline: none;
+}
+
+.btn1:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgb(219, 219, 213);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+.btn1:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(184, 193, 180, 0.641);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top:0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+
+.btn1:hover{
+  background: #34af34;
+  cursor: pointer;
+}
+
+.btn1:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+
+.btn1:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+
+.btn2{
+  position: absolute;
+  top: 75%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.btn2:focus{
+  outline: none;
+}
+
+.btn2:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgb(219, 219, 213);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+.btn2:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(184, 193, 180, 0.641);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top:0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+
+.btn2:hover{
+  background: #f70a0a;
+  cursor: pointer;
+}
+
+.btn2:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+
+.btn2:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+
+.btn3{
+  position: relative;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 40px;
+  height: 20px;
+  top: 8px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.btn3:hover{
+  background: #34af34;
+  cursor: pointer;
+}
+
+.btn4{
+  position: relative;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 40px;
+  height: 20px;
+  top: 8px;
+  left: 25px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.btn4:hover{
+  background:  #f70a0a;
+  cursor: pointer;
+}
+
+.btn5{
+  position: relative;
+  top: 33px;
+  left: 100px;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+
+.btn5:hover{
+  background:  #34af34;
+  cursor: pointer;
+}
+
+.btn6{
+  position: relative;
+  top: 33px;
+  left: 170px;
+  transform: translate(-50%,-50%);
+  background: none;
+  color: white;
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.btn6:hover{
+  background:  #f70a0a;
+  cursor: pointer;
+}
+
+.box{
+
+  position: absolute;
+  color: #fff;
+  justify-content: center;
+  left: 800px;
+  bottom: 50px;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(rgba(5, 78, 235),rgba(130, 244, 179));
+  padding: 40px 40px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+  overflow-y: scroll;
+  max-height: 400px;
+
+}
+
+.box h3{
+  text-align: center;
+}
+
+.box table{
+  width: 1000px;
+  table-layout: fixed;
+}
+
+.box table, th, td{
+  border: 3px solid whitesmoke;
+  border-collapse:collapse ;
+}
+
+.box th, .box td{
+  text-align: center;
+  padding: 5px;
+
+}
+
+.box::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+.box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.box::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+
+.form-container{
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(rgb(233, 239, 45),rgb(53, 231, 219));
+  width: 380px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+}
+
+.form-container h2{
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.control input{
+  width:100%;
+  display: block;
+  padding: 10px;
+  color: #222;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+}

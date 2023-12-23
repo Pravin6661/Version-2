@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add ExamSchedule</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" >
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin-dashboard" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <li><a routerLink="/add-profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Add Profile</span>
+                </a></li>
+                <li><a routerLink="/add-examschedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Add Exam Schedule</span>
+                </a></li>
+                <li><a routerLink="/add-assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Add Assesment</span>
+                </a></li>
+                <li><a routerLink="/add-examresults" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Add Exam Results</span>
+                </a></li>
+                <li><a routerLink="/admin-logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div>
+          <div class="box">
+            <h3>Exam Schedules for Semester {{ selectedSemester }} </h3>
+            <div>
+              <label for="semesterSelect">Select Semester:</label>
+              <select id="semesterSelect" [(ngModel)]="selectedSemester" (change)="onSemesterChange()">
+                <option *ngFor="let semester of semesters" [value]="semester">{{ semester }}</option>
+              </select>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Branch</th>
+                  <th>Semester</th>
+                  <th>Subject Code</th>
+                  <th>Subject Name</th>
+                  <th>Exam Date</th>
+                  <th>Session</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let schedule of filteredSchedules">
+                  <td>{{ schedule.id }}</td>
+                  <td>{{ schedule.branch }}</td>
+                  <td>{{ schedule.semester }}</td>
+                  <td>{{ schedule.subjectcode }}</td>
+                  <td>{{ schedule.subjectname }}</td>
+                  <td>{{ schedule.examdate }}</td>
+                  <td>{{ schedule.session }}</td>
+                  <td>
+                    <button (click)="editSchedule(schedule)" class="btn3">Edit</button>
+                    <button (click)="deleteSchedule(schedule.id)" class="btn4">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="button-group">
+            <button type="button" class="btn1" (click)="showAddScheduleForm = true">Add Schedule</button>
+            <button type="button" class="btn2" (click)="showRemoveScheduleForm = true">Remove Schedule</button>
+          </div>
+        </div>
+
+        <div *ngIf="showAddScheduleForm" class="form-container">
+          <h2>Add Schedule</h2>
+          <div class="control">
+              <label for="branch">Branch:</label>
+              <input type="text" id="branch" [(ngModel)]="newSchedule.branch" required>
+          </div>
+          <div class="control">
+            <label for="subjectSemester">Semester:</label>
+            <input type="text" id="subjectSemester" [(ngModel)]="newSchedule.semester" required>
+          </div>
+          <div class="control">
+              <label for="subjectCode">Subject Code:</label>
+              <input type="text" id="subjectCode" [(ngModel)]="newSchedule.subjectcode" required>
+          </div>
+          <div class="control">
+              <label for="subjectName">Subject Name:</label>
+              <input type="text" id="subjectName" [(ngModel)]="newSchedule.subjectname" required>
+          </div>
+          <div class="control">
+              <label for="examDate">Exam Date:</label>
+              <input type="text" id="examDate" [(ngModel)]="newSchedule.examdate" required>
+          </div>
+          <div class="control">
+              <label for="session">Session:</label>
+              <input type="text" id="session" [(ngModel)]="newSchedule.session" required>
+          </div>
+          <button (click)="addSchedule()" class="btn5">Add</button>
+          <button (click)="cancelAddSchedule()" class="btn6">Cancel</button>
+      </div>
+
+      <div *ngIf="showRemoveScheduleForm" class="form-container">
+          <h2>Remove Schedule</h2>
+          <div class="control">
+              <label for="scheduleIdToRemove">Schedule ID to Remove:</label>
+              <input type="number" id="scheduleIdToRemove" [(ngModel)]="scheduleIdToRemove">
+          </div>
+          <button (click)="removeSchedule()" class="btn5">Remove</button>
+          <button (click)="cancelRemoveSchedule()" class="btn6">Cancel</button>
+      </div>
+      <div *ngIf="showEditScheduleForm" class="form-container">
+        <h2>Edit Schedule</h2>
+        <div class="control">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" [(ngModel)]="editingSchedule.branch" required>
+        </div>
+        <div class="control">
+          <label for="subjectCode">Semester:</label>
+          <input type="text" id="semester" [(ngModel)]="editingSchedule.semester" required>
+        </div>
+        <div class="control">
+          <label for="subjectCode">Subject Code:</label>
+          <input type="text" id="subjectCode" [(ngModel)]="editingSchedule.subjectcode" required>
+        </div>
+        <div class="control">
+          <label for="subjectName">Subject Name:</label>
+          <input type="text" id="subjectName" [(ngModel)]="editingSchedule.subjectname" required>
+        </div>
+        <div class="control">
+          <label for="examDate">Exam Date:</label>
+          <input type="text" id="examDate" [(ngModel)]="editingSchedule.examdate" required>
+        </div>
+        <div class="control">
+          <label for="session">Session:</label>
+          <input type="text" id="session" [(ngModel)]="editingSchedule.session" required>
+        </div>
+        <button (click)="updateSchedule()" class="btn5">Update</button>
+        <button (click)="cancelEditSchedule()" class="btn6">Cancel</button>
+      </div>
+
+
+
+
+
+   </div>
+</body>
+</html>

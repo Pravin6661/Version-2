@@ -1,0 +1,2173 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "registernumber": 611219104071,
+      "dateofbirth": "25-09-2001"
+    },
+    {
+      "id": 2,
+      "registernumber": 611219104061,
+      "dateofbirth": "10-11-2001"
+    },
+    {
+      "id": 3,
+      "registernumber": 611219104062,
+      "dateofbirth": "19-05-2002"
+    },
+    {
+      "id": 4,
+      "registernumber": 611219104066,
+      "dateofbirth": "19-11-2001"
+    },
+    {
+      "id": 5,
+      "registernumber": 611219104069,
+      "dateofbirth": "21-05-2002"
+    },
+    {
+      "id": 6,
+      "registernumber": 611219104087,
+      "dateofbirth": "23-12-2001"
+    }
+  ],
+  "admin-login": [
+    {
+      "id": 1,
+      "email": "arunpravin8666@gmail.com",
+      "password": "Welcome@1234"
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "registernumber": 611219104071,
+      "name": "PRAVIN A",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    },
+    {
+      "id": 2,
+      "registernumber": 611219104061,
+      "name": "MUHILAN P",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    },
+    {
+      "id": 3,
+      "registernumber": 611219104062,
+      "name": "MUTHUVEL T",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    },
+    {
+      "id": 4,
+      "registernumber": 611219104066,
+      "name": "PANNEER SELVAM B",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    },
+    {
+      "id": 5,
+      "registernumber": 611219104069,
+      "name": "PRAVEEN KUMAR S",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    },
+    {
+      "id": 6,
+      "registernumber": 611219104087,
+      "name": "SARAN S",
+      "institution": "6112-KNOWLEDGE INSTITUTE OF TECHNOLOGY",
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING"
+    }
+  ],
+  "schedule": [
+    {
+      "id": 1,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "CY8151",
+      "subjectname": "Engineering Chemistry",
+      "examdate": "04-JUL-23",
+      "session": "A.N"
+    },
+    {
+      "id": 2,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8151",
+      "subjectname": "Problem Solving and Python Programming",
+      "examdate": "03-JUL-23",
+      "session": "A.N"
+    },
+    {
+      "id": 3,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8152",
+      "subjectname": "Engineering Graphics",
+      "examdate": "30-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 4,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "HS8151",
+      "subjectname": "Communicative English",
+      "examdate": "01-JUL-23",
+      "session": "A.N"
+    },
+    {
+      "id": 5,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "MA8151",
+      "subjectname": "Engineering Mathematics-I",
+      "examdate": "26-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 6,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "PH8151",
+      "subjectname": "Engineering Physics",
+      "examdate": "28-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 7,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "BE8255",
+      "subjectname": "Basic Electrical,Electronics and Measurement Engineering",
+      "examdate": "03-JUL-23",
+      "session": "F.N"
+    },
+    {
+      "id": 8,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "CS8251",
+      "subjectname": "Programming in C",
+      "examdate": "30-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 9,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "GE8291",
+      "subjectname": "Environmental Science and Engineering",
+      "examdate": "22-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 10,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "HS8251",
+      "subjectname": "Technical English",
+      "examdate": "01-JUL-23",
+      "session": "F.N"
+    },
+    {
+      "id": 11,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "MA8251",
+      "subjectname": "Engineering Mathematics-II",
+      "examdate": "26-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 12,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "PH8252",
+      "subjectname": "Physics for Information Science",
+      "examdate": "28-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 13,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8351",
+      "subjectname": "Digital Principles and System Design",
+      "examdate": "24-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 14,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8391",
+      "subjectname": "Data Structures",
+      "examdate": "14-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 15,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8392",
+      "subjectname": "Object Oriented Programming",
+      "examdate": "23-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 16,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "EC8395",
+      "subjectname": "Communication Engineering",
+      "examdate": "13-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 17,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "MA8351",
+      "subjectname": "Discrete Mathematics",
+      "examdate": "04-JUL-23",
+      "session": "F.N"
+    },
+    {
+      "id": 18,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8451",
+      "subjectname": "Design and Analytics of Algorithms",
+      "examdate": "13-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 19,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8491",
+      "subjectname": "Computer Architecture",
+      "examdate": "06-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 20,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8492",
+      "subjectname": "Database Management Systems",
+      "examdate": "19-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 21,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8493",
+      "subjectname": "Operating Systems",
+      "examdate": "17-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 22,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8494",
+      "subjectname": "Software Engineering",
+      "examdate": "15-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 23,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "MA8402",
+      "subjectname": "Probability and Queueing Theory",
+      "examdate": "21-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 24,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8501",
+      "subjectname": "Theory of Computation",
+      "examdate": "20-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 25,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8591",
+      "subjectname": "Computer Networks",
+      "examdate": "17-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 26,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8592",
+      "subjectname": "Object Oriented Analysis and Design",
+      "examdate": "10-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 27,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "EC8691",
+      "subjectname": "Microprocessor and Microcontrollers",
+      "examdate": "14-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 28,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "MA8551",
+      "subjectname": "Algebra and Number Theory",
+      "examdate": "05-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 29,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "OCE552",
+      "subjectname": "Geographic Information System",
+      "examdate": "27-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 30,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8601",
+      "subjectname": "Mobile Computing",
+      "examdate": "10-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 31,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8602",
+      "subjectname": "Compiler Design",
+      "examdate": "23-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 32,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8603",
+      "subjectname": "Distributed Systems",
+      "examdate": "15-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 33,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8651",
+      "subjectname": "Internet Programming",
+      "examdate": "19-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 34,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8691",
+      "subjectname": "Artificial Intelligence",
+      "examdate": "08-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 35,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "IT8076",
+      "subjectname": "Software Testing",
+      "examdate": "06-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 36,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8791",
+      "subjectname": "Cloud Computing",
+      "examdate": "21-JUN-23",
+      "session": "A.N"
+    },
+    {
+      "id": 37,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8792",
+      "subjectname": "Cryptography and Network Security",
+      "examdate": "16-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 38,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "IT8075",
+      "subjectname": "Software Project Management",
+      "examdate": "27-MAY-23",
+      "session": "A.N"
+    },
+    {
+      "id": 39,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "MG8591",
+      "subjectname": "Principles of Management",
+      "examdate": "07-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 40,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "OCH752",
+      "subjectname": "Energy Technology",
+      "examdate": "30-MAY-23",
+      "session": "A.N"
+    },
+    {
+      "id": 41,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "GE8076",
+      "subjectname": "Professional Ethics in Engineering",
+      "examdate": "05-JUN-23",
+      "session": "F.N"
+    },
+    {
+      "id": 42,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "CS8080",
+      "subjectname": "Information Retrieval Techniques",
+      "examdate": "09-JUN-23",
+      "session": "F.N"
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "CY8151",
+      "subjectname": "Engineering Chemistry",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 2,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8151",
+      "subjectname": "Problem Solving and Python Programming",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 3,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8152",
+      "subjectname": "Engineering Graphics",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 4,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "HS8151",
+      "subjectname": "Communicative English",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 5,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "MA8151",
+      "subjectname": "Engineering Mathematics-I",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 6,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "PH8151",
+      "subjectname": "Engineering Physics",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 7,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "BE8255",
+      "subjectname": "Basic Electrical,Electronics and Measurement Engineering",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 8,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "CS8251",
+      "subjectname": "Programming in C",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 9,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "GE8291",
+      "subjectname": "Environmental Science and Engineering",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 10,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "HS8251",
+      "subjectname": "Technical English",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 11,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "MA8251",
+      "subjectname": "Engineering Mathematics-II",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 12,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "PH8252",
+      "subjectname": "Physics for Information Science",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 13,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8351",
+      "subjectname": "Digital Principles and System Design",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 14,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8391",
+      "subjectname": "Data Structures",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 15,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8392",
+      "subjectname": "Object Oriented Programming",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 16,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "EC8395",
+      "subjectname": "Communication Engineering",
+      "grade": "O",
+      "result": "PASS"
+    },
+    {
+      "id": 17,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "MA8351",
+      "subjectname": "Discrete Mathematics",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 18,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8451",
+      "subjectname": "Design and Analytics of Algorithms",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 19,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8491",
+      "subjectname": "Computer Architecture",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 20,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8492",
+      "subjectname": "Database Management Systems",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 21,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8493",
+      "subjectname": "Operating Systems",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 22,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8494",
+      "subjectname": "Software Engineering",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 23,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "MA8402",
+      "subjectname": "Probability and Queueing Theory",
+      "grade": "O",
+      "result": "PASS"
+    },
+    {
+      "id": 24,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8501",
+      "subjectname": "Theory of Computation",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 25,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8591",
+      "subjectname": "Computer Networks",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 26,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8592",
+      "subjectname": "Object Oriented Analysis and Design",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 27,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "EC8691",
+      "subjectname": "Microprocessor and Microcontrollers",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 28,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "MA8551",
+      "subjectname": "Algebra and Number Theory",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 29,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "OCE552",
+      "subjectname": "Geographic Information System",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 30,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8601",
+      "subjectname": "Mobile Computing",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 31,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8602",
+      "subjectname": "Compiler Design",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 32,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8603",
+      "subjectname": "Distributed Systems",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 33,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8651",
+      "subjectname": "Internet Programming",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 34,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8691",
+      "subjectname": "Artificial Intelligence",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 35,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "IT8076",
+      "subjectname": "Software Testing",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 36,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8791",
+      "subjectname": "Cloud Computing",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 37,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8792",
+      "subjectname": "Cryptography and Network Security",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 38,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "IT8075",
+      "subjectname": "Software Project Management",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 39,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "MG8591",
+      "subjectname": "Principles of Management",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 40,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "OCH752",
+      "subjectname": "Energy Technology",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 41,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "GE8076",
+      "subjectname": "Professional Ethics in Engineering",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 42,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "CS8080",
+      "subjectname": "Information Retrieval Techniques",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 43,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "CY8151",
+      "subjectname": "Engineering Chemistry",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 44,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8151",
+      "subjectname": "Problem Solving and Python Programming",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 45,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8152",
+      "subjectname": "Engineering Graphics",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 46,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "HS8151",
+      "subjectname": "Communicative English",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 47,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "MA8151",
+      "subjectname": "Engineering Mathematics-I",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 48,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "PH8151",
+      "subjectname": "Engineering Physics",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 49,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "BE8255",
+      "subjectname": "Basic Electrical,Electronics and Measurement Engineering",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 50,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "CS8251",
+      "subjectname": "Programming in C",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 51,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "GE8291",
+      "subjectname": "Environmental Science and Engineering",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 52,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "HS8251",
+      "subjectname": "Technical English",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 53,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "MA8251",
+      "subjectname": "Engineering Mathematics-II",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 54,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "PH8252",
+      "subjectname": "Physics for Information Science",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 55,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8351",
+      "subjectname": "Digital Principles and System Design",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 56,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8391",
+      "subjectname": "Data Structures",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 57,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8392",
+      "subjectname": "Object Oriented Programming",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 58,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "EC8395",
+      "subjectname": "Communication Engineering",
+      "grade": "O",
+      "result": "PASS"
+    },
+    {
+      "id": 59,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "MA8351",
+      "subjectname": "Discrete Mathematics",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 60,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8451",
+      "subjectname": "Design and Analytics of Algorithms",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 61,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8491",
+      "subjectname": "Computer Architecture",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 62,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8492",
+      "subjectname": "Database Management Systems",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 63,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8493",
+      "subjectname": "Operating Systems",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 64,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8494",
+      "subjectname": "Software Engineering",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 65,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "MA8402",
+      "subjectname": "Probability and Queueing Theory",
+      "grade": "O",
+      "result": "PASS"
+    },
+    {
+      "id": 66,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8501",
+      "subjectname": "Theory of Computation",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 67,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8591",
+      "subjectname": "Computer Networks",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 68,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8592",
+      "subjectname": "Object Oriented Analysis and Design",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 69,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "EC8691",
+      "subjectname": "Microprocessor and Microcontrollers",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 70,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "MA8551",
+      "subjectname": "Algebra and Number Theory",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 71,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "OCE552",
+      "subjectname": "Geographic Information System",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 72,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8601",
+      "subjectname": "Mobile Computing",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 73,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8602",
+      "subjectname": "Compiler Design",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 74,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8603",
+      "subjectname": "Distributed Systems",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 75,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8651",
+      "subjectname": "Internet Programming",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 76,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8691",
+      "subjectname": "Artificial Intelligence",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 77,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "IT8076",
+      "subjectname": "Software Testing",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 78,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8791",
+      "subjectname": "Cloud Computing",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 79,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8792",
+      "subjectname": "Cryptography and Network Security",
+      "grade": "B+",
+      "result": "PASS"
+    },
+    {
+      "id": 80,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "IT8075",
+      "subjectname": "Software Project Management",
+      "grade": "A+",
+      "result": "PASS"
+    },
+    {
+      "id": 81,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "MG8591",
+      "subjectname": "Principles of Management",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 82,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "OCH752",
+      "subjectname": "Energy Technology",
+      "grade": "A",
+      "result": "PASS"
+    },
+    {
+      "id": 83,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "GE8076",
+      "subjectname": "Professional Ethics in Engineering",
+      "grade": "B",
+      "result": "PASS"
+    },
+    {
+      "id": 84,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "CS8080",
+      "subjectname": "Information Retrieval Techniques",
+      "grade": "B",
+      "result": "PASS"
+    }
+  ],
+  "assesment": [
+    {
+      "id": 1,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "CY8151",
+      "subjectname": "Engineering Chemistry",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 2,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8151",
+      "subjectname": "Problem Solving and Python Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 3,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8152",
+      "subjectname": "Engineering Graphics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 4,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "HS8151",
+      "subjectname": "Communicative English",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 5,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "MA8151",
+      "subjectname": "Engineering Mathematics-I",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 6,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "PH8151",
+      "subjectname": "Engineering Physics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 7,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "BE8255",
+      "subjectname": "Basic Electrical,Electronics and Measurement Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 8,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "CS8251",
+      "subjectname": "Programming in C",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 9,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "GE8291",
+      "subjectname": "Environmental Science and Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 10,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "HS8251",
+      "subjectname": "Technical English",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 11,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "MA8251",
+      "subjectname": "Engineering Mathematics-II",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 12,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "PH8252",
+      "subjectname": "Physics for Information Science",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 13,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8351",
+      "subjectname": "Digital Principles and System Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 14,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8391",
+      "subjectname": "Data Structures",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 15,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8392",
+      "subjectname": "Object Oriented Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 16,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "EC8395",
+      "subjectname": "Communication Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 17,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "MA8351",
+      "subjectname": "Discrete Mathematics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 18,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8451",
+      "subjectname": "Design and Analytics of Algorithms",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 19,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8491",
+      "subjectname": "Computer Architecture",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 20,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8492",
+      "subjectname": "Database Management Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 21,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8493",
+      "subjectname": "Operating Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 22,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8494",
+      "subjectname": "Software Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 23,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "MA8402",
+      "subjectname": "Probability and Queueing Theory",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 24,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8501",
+      "subjectname": "Theory of Computation",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 25,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8591",
+      "subjectname": "Computer Networks",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 26,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8592",
+      "subjectname": "Object Oriented Analysis and Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 27,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "EC8691",
+      "subjectname": "Microprocessor and Microcontrollers",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 28,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "MA8551",
+      "subjectname": "Algebra and Number Theory",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 29,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "OCE552",
+      "subjectname": "Geographic Information System",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 30,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8601",
+      "subjectname": "Mobile Computing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 31,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8602",
+      "subjectname": "Compiler Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 32,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8603",
+      "subjectname": "Distributed Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 33,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8651",
+      "subjectname": "Internet Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 34,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8691",
+      "subjectname": "Artificial Intelligence",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 35,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "IT8076",
+      "subjectname": "Software Testing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 36,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8791",
+      "subjectname": "Cloud Computing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 37,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8792",
+      "subjectname": "Cryptography and Network Security",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 38,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "IT8075",
+      "subjectname": "Software Project Management",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 39,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "MG8591",
+      "subjectname": "Principles of Management",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 40,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "OCH752",
+      "subjectname": "Energy Technology",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 41,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "GE8076",
+      "subjectname": "Professional Ethics in Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 42,
+      "registernumber": 611219104071,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "CS8080",
+      "subjectname": "Information Retrieval Techniques",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 43,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "CY8151",
+      "subjectname": "Engineering Chemistry",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 44,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8151",
+      "subjectname": "Problem Solving and Python Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 45,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "GE8152",
+      "subjectname": "Engineering Graphics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 46,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "HS8151",
+      "subjectname": "Communicative English",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 47,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "MA8151",
+      "subjectname": "Engineering Mathematics-I",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 48,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "01",
+      "subjectcode": "PH8151",
+      "subjectname": "Engineering Physics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 49,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "BE8255",
+      "subjectname": "Basic Electrical,Electronics and Measurement Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 50,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "CS8251",
+      "subjectname": "Programming in C",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 51,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "GE8291",
+      "subjectname": "Environmental Science and Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 52,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "HS8251",
+      "subjectname": "Technical English",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 53,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "MA8251",
+      "subjectname": "Engineering Mathematics-II",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 54,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "02",
+      "subjectcode": "PH8252",
+      "subjectname": "Physics for Information Science",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 55,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8351",
+      "subjectname": "Digital Principles and System Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 56,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8391",
+      "subjectname": "Data Structures",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 57,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "CS8392",
+      "subjectname": "Object Oriented Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 58,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "EC8395",
+      "subjectname": "Communication Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 59,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "03",
+      "subjectcode": "MA8351",
+      "subjectname": "Discrete Mathematics",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 60,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8451",
+      "subjectname": "Design and Analytics of Algorithms",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 61,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8491",
+      "subjectname": "Computer Architecture",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 62,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8492",
+      "subjectname": "Database Management Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 63,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8493",
+      "subjectname": "Operating Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 64,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "CS8494",
+      "subjectname": "Software Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 65,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "04",
+      "subjectcode": "MA8402",
+      "subjectname": "Probability and Queueing Theory",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 66,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8501",
+      "subjectname": "Theory of Computation",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 67,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8591",
+      "subjectname": "Computer Networks",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 68,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "CS8592",
+      "subjectname": "Object Oriented Analysis and Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 69,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "EC8691",
+      "subjectname": "Microprocessor and Microcontrollers",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 70,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "MA8551",
+      "subjectname": "Algebra and Number Theory",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 71,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "05",
+      "subjectcode": "OCE552",
+      "subjectname": "Geographic Information System",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 72,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8601",
+      "subjectname": "Mobile Computing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 73,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8602",
+      "subjectname": "Compiler Design",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 74,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8603",
+      "subjectname": "Distributed Systems",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 75,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8651",
+      "subjectname": "Internet Programming",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 76,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "CS8691",
+      "subjectname": "Artificial Intelligence",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 77,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "06",
+      "subjectcode": "IT8076",
+      "subjectname": "Software Testing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 78,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8791",
+      "subjectname": "Cloud Computing",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 79,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "CS8792",
+      "subjectname": "Cryptography and Network Security",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 80,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "IT8075",
+      "subjectname": "Software Project Management",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 81,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "MG8591",
+      "subjectname": "Principles of Management",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 82,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "07",
+      "subjectcode": "OCH752",
+      "subjectname": "Energy Technology",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 83,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "GE8076",
+      "subjectname": "Professional Ethics in Engineering",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    },
+    {
+      "id": 84,
+      "registernumber": 611219104061,
+      "branch": "104-COMPUTER SCIENCE AND ENGINEERING",
+      "semester": "08",
+      "subjectcode": "CS8080",
+      "subjectname": "Information Retrieval Techniques",
+      "assigned": "Assigned",
+      "completed": "Completed"
+    }
+  ],
+  "studentLoginCounts": [
+    {
+      "registerNumber": 611219104071,
+      "id": 1
+    },
+    {
+      "registerNumber": 611219104071,
+      "id": 2
+    },
+    {
+      "registerNumber": 611219104071,
+      "id": 3
+    },
+    {
+      "registerNumber": 611219104071,
+      "id": 4
+    }
+  ],
+  "adminLoginCounts": [
+    {
+      "email": "arunpravin8666@gmail.com",
+      "id": 1
+    }
+  ]
+}

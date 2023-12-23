@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Profile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" >
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin-dashboard" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <li><a routerLink="/add-profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Add Profile</span>
+                </a></li>
+                <li><a routerLink="/add-examschedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Add Exam Schedule</span>
+                </a></li>
+                <li><a routerLink="/add-assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Add Assesment</span>
+                </a></li>
+                <li><a routerLink="/add-examresults" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Add Exam Results</span>
+                </a></li>
+                <li><a routerLink="/admin-logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="box">
+          <h3>Student Profiles</h3><br><br>
+          <table>
+            <tbody id="tbody">
+            <tr>
+              <th>Id</th>
+              <th>Register Number</th>
+              <th>Name</th>
+              <th>Institution</th>
+              <th>Branch</th>
+              <th>Actions</th>
+            </tr>
+            <tr *ngFor="let profile of studentProfiles">
+              <td>{{ profile.id }}</td>
+              <td>{{ profile.registernumber }}</td>
+              <td>{{ profile.name }}</td>
+              <td>{{ profile.institution }}</td>
+              <td>{{ profile.branch }}</td>
+              <td>
+                <button (click)="editProfile(profile)" class="btn3">Edit</button>
+                <button (click)="confirmDeleteProfile(profile)" class="btn4">Delete</button>
+              </td>
+            </tr>
+
+          </tbody>
+          </table>
+
+      </div>
+
+      <div class="button-group">
+        <button type="button"  class="btn1" (click)="showAddProfileForm = true">Add Profile</button>
+        <button  type="button" class="btn2" (click)="showRemoveProfileForm = true">Remove Profile</button>
+      </div>
+
+      <div *ngIf="showAddProfileForm" class="form-container">
+        <h2>Add Profile</h2>
+        <div class="control">
+          <label for="registerNumber">Register Number:</label>
+          <input type="number" id="registerNumber" [(ngModel)]="newProfile.registernumber">
+        </div>
+        <div class="control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" [(ngModel)]="newProfile.name">
+        </div>
+        <div class="control">
+          <label for="institution">Institution:</label>
+          <input type="text" id="institution" [(ngModel)]="newProfile.institution">
+        </div>
+        <div class="control">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" [(ngModel)]="newProfile.branch">
+        </div>
+        <button (click)="showAddProfileForm && !showEditProfileForm ? addProfile() : updateProfile()" class="btn5">Add</button>
+        <button (click)="cancelAddProfile()" class="btn6">Cancel</button>
+      </div>
+
+      <div *ngIf="showRemoveProfileForm" class="form-container">
+        <h2>Remove Profile</h2>
+        <div class="control">
+          <label for="profileIdToRemove">Profile ID to Remove:</label>
+          <input type="number" id="profileIdToRemove" [(ngModel)]="profileIdToRemove">
+        </div>
+        <button (click)="removeProfile()" class="btn5">Remove</button>
+        <button (click)="cancelRemoveProfile()" class="btn6">Cancel</button>
+      </div>
+
+      <div *ngIf="showEditProfileForm" class="form-container">
+        <h2>Edit Profile</h2>
+        <div class="control">
+          <label for="registerNumber">Register Number:</label>
+          <input type="number" id="registerNumber" [(ngModel)]="selectedProfile.registernumber">
+        </div>
+        <div class="control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" [(ngModel)]="selectedProfile.name">
+        </div>
+        <div class="control">
+          <label for="institution">Institution:</label>
+          <input type="text" id="institution" [(ngModel)]="selectedProfile.institution">
+        </div>
+        <div class="control">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" [(ngModel)]="selectedProfile.branch">
+        </div>
+        <button (click)="updateProfile()" class="btn5">Update</button>
+        <button (click)="cancelEditProfile()" class="btn6">Cancel</button>
+      </div>
+
+    </div>
+</body>
+</html>

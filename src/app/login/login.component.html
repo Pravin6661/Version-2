@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Portal</title>
+
+
+</head>
+<body>
+  <!-- Title section -->
+    <div class="title">
+          <h1>MPRS University, Chennai</h1>
+          <h3>Office of the Controller of Examinations</h3>
+          <h3>Pre- Examination Monitoring System</h3>
+          <br>
+          <hr>
+    </div>
+     <!-- Content section -->
+    <div class="content">
+       <!-- Display marquee with welcome messages -->
+        <marquee scrollamount=15>
+                <h2 [align]="'center'"> Welcome to Office of the Controller of Examinations</h2>
+                <br>
+                <h3 [align]="'center'">Pre-Examination Monitoring System</h3>
+        </marquee>
+    </div>
+
+
+
+    <section>
+       <!-- Login form section -->
+        <div class="form-container">
+            <h1>Student Login</h1>
+            <form #userSignIn="ngForm" (ngSubmit)="signIn(userSignIn.value)">
+              <!-- Display authentication error message -->
+              <p class="error-p">{{authError}}</p>
+                  <div class="control">
+                    <label for="registernumber">Register Number</label>
+                    <input type="number" name="registernumber"  #registernumber="ngModel" ngModel required pattern="^[0-9]*$" maxlength="12">
+                  </div>
+                      <div *ngIf="registernumber.invalid && (registernumber.dirty || registernumber.touched)">
+                        <!-- Display validation error message for register number -->
+
+                        <span class="error"><small *ngIf="registernumber.errors?.['required']">Please enter the register number</small></span><br>
+
+
+
+                      </div>
+
+                 <div class="control">
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" name="dateofbirth"  #dateofbirth="ngModel" ngModel required="">
+                  </div>
+                  <div *ngIf="dateofbirth.invalid && (dateofbirth.dirty || dateofbirth.touched)">
+                    <!-- Display validation error message for date of birth -->
+
+                    <span class="error"><small *ngIf="dateofbirth.errors?.['required']">Please enter the date of birth</small></span>
+
+                  </div>
+
+                <span><input type="checkbox">Remember me</span>
+               <div class="control">
+                    <input type="submit" [disabled]="userSignIn.invalid"  value="Login">
+               </div>
+            </form>
+          </div>
+
+  </section>
+  <!--<div class="box">
+         <p>*Kind Attention to the Institution: - Nov./Dec. 2022 Examinations ( UG I Year) Results is Published .</p>
+  </div> !-->
+
+
+</body>
+</html>

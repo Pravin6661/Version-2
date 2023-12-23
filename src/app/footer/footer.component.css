@@ -1,0 +1,100 @@
+.company-details{
+	background: #101010;
+  width: 100%;
+  padding: .10px 0px;
+}
+
+.title h2{
+  color: white;
+  font-size: 50px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+  height: 190px;
+  width: 200px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+#footer #icon{
+     font-size: 30px;
+     display: block;
+     text-align: center;
+     margin: .30px 0px;
+     color: #f9004d;
+}
+
+h5{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+#footer #pra{
+  color: rgba(251, 248, 251, 0.8);
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.copyright
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+	background: #4CAF50;
+}
+
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+ul.contact{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+}
+
+ul.contact li{
+	display: inline-block;
+	padding: 0em 0.10em;
+	font-size: 1em;
+}
+
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: #4C93B9;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}

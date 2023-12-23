@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border:none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+body{
+  background-image: url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+}
+
+
+
+.container{
+  display: flex;
+}
+
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 69px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  transition: 0.2s linear;
+}
+
+nav:hover{
+  width: 290px;
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0px 0px 10px;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  color: rgb(85,83,83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+
+nav .fas{
+  position: relative;
+  width: 76px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover{
+  background: #eee;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logout img{
+  width: 20px;
+  height: 20px;
+}
+
+.logout span{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.png{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.material-symbols-sharp {
+font-size: 32px;
+}
+
+.png span{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.box{
+
+  position: absolute;
+  color: #fff;
+  justify-content: center;
+  left: 800px;
+  bottom: 100px;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(rgba(231, 10, 10),rgba(19, 208, 135));
+  width: 800px;
+  padding: 60px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+
+}
+
+.box h3{
+  text-align: center;
+}
+
+.box td{
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+

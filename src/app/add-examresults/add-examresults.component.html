@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add ExamResults</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" >
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a routerLink="/admin-dashboard" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <li><a routerLink="/add-profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Add Profile</span>
+                </a></li>
+                <li><a routerLink="/add-examschedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Add Exam Schedule</span>
+                </a></li>
+                <li><a routerLink="/add-assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Add Assesment</span>
+                </a></li>
+                <li><a routerLink="/add-examresults" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Add Exam Results</span>
+                </a></li>
+                <li><a routerLink="/admin-logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="box">
+          <h3>Exam Results</h3>
+
+          <div>
+          <label for="semesterSelect">Select Semester:</label>
+          <select id="semesterSelect" [(ngModel)]="selectedSemester" (change)="onSemesterChange()">
+            <option *ngFor="let semester of semesters" [value]="semester">{{ semester }}</option>
+          </select>
+          </div>
+
+          <div>
+            <label for="registerNumberSelect">Select Register Number:</label>
+            <select id="registerNumberSelect" [(ngModel)]="selectedRegisterNumber" (change)="onRegisterNumberChange()">
+              <option *ngFor="let regNumber of registerNumbers" [value]="regNumber">{{ regNumber }}</option>
+            </select>
+          </div>
+
+
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Register Number</th>
+                <th>Branch</th>
+                <th>Semester</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Grade</th>
+                <th>Result</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let result of filteredResults">
+                <td>{{ result.id }}</td>
+                <td>{{ result.registernumber }}</td>
+                <td>{{ result.branch }}</td>
+                <td>{{ result.semester }}</td>
+                <td>{{ result.subjectcode }}</td>
+                <td>{{ result.subjectname }}</td>
+                <td>{{ result.grade }}</td>
+                <td>{{ result.result }}</td>
+                <td>
+                  <button (click)="editResult(result)" class="btn3">Edit</button>
+                  <button (click)="deleteResult(result.id)" class="btn4">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="btn1" (click)="showAddResultForm = true">Add Result</button>
+          <button type="button" class="btn2" (click)="showRemoveResultForm = true">Remove Result</button>
+        </div>
+
+        <div *ngIf="showAddResultForm" class="form-container">
+          <h2>Add Result</h2>
+          <div class="control">
+            <label for="registerNumber">Register Number:</label>
+            <input type="number" id="registerNumber" [(ngModel)]="newResult.registernumber" required>
+          </div>
+          <div class="control">
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" [(ngModel)]="newResult.branch" required>
+          </div>
+          <div class="control">
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" [(ngModel)]="newResult.semester" required>
+          </div>
+          <div class="control">
+            <label for="subjectCode">Subject Code:</label>
+            <input type="text" id="subjectCode" [(ngModel)]="newResult.subjectcode" required>
+          </div>
+          <div class="control">
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" [(ngModel)]="newResult.subjectname" required>
+          </div>
+          <div class="control">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" [(ngModel)]="newResult.grade" required>
+          </div>
+          <div class="control">
+            <label for="result">Result:</label>
+            <input type="text" id="result" [(ngModel)]="newResult.result" required>
+          </div>
+          <button (click)="addResult()" class="btn5">Add</button>
+          <button (click)="cancelAddResult()" class="btn6">Cancel</button>
+        </div>
+
+        <div *ngIf="showEditResultForm" class="form-container">
+          <h2>Edit Result</h2>
+          <div class="control">
+            <label for="registerNumber">Register Number:</label>
+            <input type="number" id="registerNumber" [(ngModel)]="editingResult.registernumber" required>
+          </div>
+          <div class="control">
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" [(ngModel)]="editingResult.branch" required>
+          </div>
+          <div class="control">
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" [(ngModel)]="editingResult.semester" required>
+          </div>
+          <div class="control">
+            <label for="subjectCode">Subject Code:</label>
+            <input type="text" id="subjectCode" [(ngModel)]="editingResult.subjectcode" required>
+          </div>
+          <div class="control">
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" [(ngModel)]="editingResult.subjectname" required>
+          </div>
+          <div class="control">
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" [(ngModel)]="editingResult.grade" required>
+          </div>
+          <div class="control">
+            <label for="result">Result:</label>
+            <input type="text" id="result" [(ngModel)]="editingResult.result" required>
+          </div>
+          <button (click)="updateResult()" class="btn5">Update</button>
+          <button (click)="cancelEditResult()" class="btn6">Cancel</button>
+        </div>
+
+        <div *ngIf="showRemoveResultForm" class="form-container">
+          <div class="control">
+            <label for="resultIdToRemove">Result ID to Remove:</label>
+            <input type="number" id="resultIdToRemove" [(ngModel)]="resultIdToRemove">
+          </div>
+          <button (click)="removeResult()" class="btn5">Remove</button>
+          <button (click)="cancelRemoveResult()" class="btn6">Cancel</button>
+        </div>
+
+      </div>
+
+
+
+</body>
+</html>

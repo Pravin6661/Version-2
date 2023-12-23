@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <!-- Dashboard -->
+                <li><a routerLink="/admin-dashboard" class="logo">
+                    <img src="images/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <!-- Add Profile -->
+                <li><a routerLink="/add-profile" class="png">
+                    <i class="material-symbols-sharp">person</i>
+                    <span class="nav-item">Add Profile</span>
+                </a></li>
+                <!-- Add Exam Schedule -->
+                <li><a routerLink="/add-examschedule" class="png">
+                    <i class="material-symbols-sharp">calendar_month</i>
+                    <span class="nav-item">Add Exam Schedule</span>
+                </a></li>
+                <!-- Add Assessment -->
+                <li><a routerLink="/add-assesment" class="png">
+                    <i class="material-symbols-sharp">assignment</i>
+                    <span class="nav-item">Add Assessment</span>
+                </a></li>
+                <!-- Add Exam Results -->
+                <li><a routerLink="/add-examresults" class="png">
+                    <i class="material-symbols-sharp">grade</i>
+                    <span class="nav-item">Add Exam Results</span>
+                </a></li>
+                <!-- Logout -->
+                <li><a routerLink="/admin-logout" class="logout">
+                    <i class="material-symbols-sharp">logout</i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Details Table -->
+        <div class="box">
+          <h3>Login Details</h3><br><br>
+          <table>
+            <tbody id="tbody">
+            <tr>
+              <th>Id</th>
+              <th>Register Number</th>
+              <th>Date of Birth</th>
+              <th>Actions</th>
+            </tr>
+            <!-- Loop through loginInformation to display details -->
+            <tr *ngFor="let login of loginInformation">
+              <td>{{ login.id }}</td>
+              <td>{{ login.registernumber }}</td>
+              <td>{{ login.dateofbirth }}</td>
+              <td>
+                <!-- Edit and Delete buttons -->
+                <button (click)="editStudent(login)" class="btn3">Edit</button>
+                <button (click)="deleteStudent(login.id)" class="btn4">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+     </div>
+
+       <!-- Add and Remove Student Buttons -->
+       <div>
+        <button type="button" class="btn1" (click)="showAddStudentForm = true">Add Student</button>
+        <button type="button" class="btn2" (click)="showRemoveStudentForm = true">Remove Student</button>
+       </div>
+
+      <!-- Edit Student Form -->
+      <div *ngIf="selectedStudent" class="form-container">
+        <h2>Edit Student</h2>
+        <div class="control">
+          <label for="registerNumber">Register Number:</label>
+          <input type="number" id="registerNumber" [(ngModel)]="selectedStudent.registernumber">
+        </div>
+        <div class="control">
+          <label for="dateOfBirth">Date of Birth:</label>
+          <input type="text" id="dateOfBirth" [(ngModel)]="selectedStudent.dateofbirth">
+        </div>
+        <button (click)="updateStudent()" class="btn5">Update</button>
+        <button (click)="cancelUpdate()" class="btn6">Cancel</button>
+      </div>
+
+      <!-- Add Student Form -->
+      <div *ngIf="showAddStudentForm" class="form-container">
+        <h2>Add Student</h2>
+        <div class="control">
+          <label for="registerNumber">Register Number:</label>
+          <input type="number" id="registerNumber" [(ngModel)]="newStudent.registernumber">
+        </div>
+        <div class="control">
+          <label for="dateOfBirth">Date of Birth:</label>
+          <input type="text" id="dateOfBirth" [(ngModel)]="newStudent.dateofbirth">
+        </div>
+        <button (click)="addStudent()" class="btn5">Add</button>
+        <button (click)="cancelAddStudent()" class="btn6">Cancel</button>
+      </div>
+
+      <!-- Remove Student Form -->
+      <div *ngIf="showRemoveStudentForm" class="form-container">
+        <h2>Remove Student</h2>
+        <div>
+          <label for="studentId">Student ID:</label>
+          <input type="text" id="studentId" [(ngModel)]="studentId">
+        </div>
+        <button (click)="removeStudent()" class="btn5">Remove</button>
+        <button (click)="cancelRemoveStudent()" class="btn6">Cancel</button>
+      </div>
+    </div>
+</body>
+</html>

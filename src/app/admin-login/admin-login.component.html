@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Portal</title>
+</head>
+<body>
+    <!-- Title and Header Section -->
+    <div class="title">
+        <h1>MPRS University, Chennai</h1>
+        <h3>Office of the Controller of Examinations</h3>
+        <h3>Pre-Examination Monitoring System</h3>
+        <br>
+        <hr>
+    </div>
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Marquee for Welcome Message -->
+        <marquee scrollamount=15>
+            <h2 [align]="'center'"> Welcome to Office of the Controller of Examinations</h2>
+            <br>
+            <h3 [align]="'center'">Pre-Examination Monitoring System</h3>
+        </marquee>
+    </div>
+    <!-- Admin Login Form Section -->
+    <section>
+        <div class="form-container">
+            <h1>Admin Login</h1>
+            <!-- Form for Admin Sign In -->
+            <form #adminSignIn="ngForm" (ngSubmit)="signIn(adminSignIn.value)">
+                <p class="error-p">{{authError}}</p>
+                <!-- Email Input -->
+                <div class="control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" #email="ngModel" ngModel required=""
+                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                </div>
+                <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                    <span class="error"><small *ngIf="email.errors?.['required']">Please enter the Email</small></span><br>
+                    <span class="error"><small *ngIf="email.errors?.['pattern']">Please enter a valid Email</small></span>
+                </div>
+                <!-- Password Input -->
+                <div class="control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" #password="ngModel" ngModel required=""
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" minlength="8">
+                </div>
+                <div *ngIf="password.invalid && (password.dirty || password.touched)">
+                    <span class="error"><small *ngIf="password.errors?.['required']">Please enter the Password</small></span><br>
+                    <span class="error"><small *ngIf="password.errors?.['pattern']">Password must contain at least 1 uppercase, 1 lowercase, 1 number, and 1 special character</small></span>
+                </div>
+                <!-- Remember Me Checkbox -->
+                <span><input type="checkbox">Remember me</span>
+                <!-- Submit Button -->
+                <div class="control">
+                    <input type="submit" [disabled]="adminSignIn.invalid" value="Login">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
